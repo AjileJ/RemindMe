@@ -28,7 +28,7 @@ class App extends Component{
     return (
       <ul className='list-group col-sm-4'>
         {
-          reminders.length !== 0 ? 
+      
           reminders.map(reminder => {
             return (
               <li key={reminder.id} className='list-group-item'>
@@ -39,7 +39,7 @@ class App extends Component{
               </li>
             )
           })
-          : null
+          
         }
       </ul>
     )
